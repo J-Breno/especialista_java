@@ -46,3 +46,20 @@ Shift + enter = cria nova linha
 Ctrl + Shift + U = deixa tudo maisculo ou minusculo
 Shift + f6 = renomeia palavra
 stratches = serve para fazer anotações e testar códigos no projeto e eles não estão presos ao projeto, se voce abrir outro projeto eles vão está lá
+
+## Mergulhando em Orientação a objeto
+
+### Rascunhando e testando código com Scratch Files
+
+É a forma que classificamos a linguagem de programação pela sua forma de funcionar
+
+Programação imperativa = O programador instrui a máquina de como fazer as coisas
+
+- Programação procedural = programa passo a passo, por uma ordem.
+- Programação orientada a objetos = Simular as coisas no mundo real/abstrato no código, tudo seria um objeto, possui uma identidade;
+
+Programação declarativa: descreva apenas o resultado desejado sem falar a lógica
+
+- Programação funcional
+- Programação reativa
+
