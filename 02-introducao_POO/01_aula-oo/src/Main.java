@@ -11,6 +11,7 @@ public class Main {
         meuCarro.modelo = "HRV";
         meuCarro.fabricante = "Honda";
         meuCarro.proprietario = eu;
+        meuCarro.precoCompra = 120000;
 
         Pessoa vc = new Pessoa();
         vc.nome = "João";
@@ -23,6 +24,7 @@ public class Main {
         seuCarro.modelo = "X6";
         seuCarro.fabricante = "BMW";
         seuCarro.proprietario = vc;
+        seuCarro.precoCompra = 98000;
 
         meuCarro.calcularValorRefenda();
 
