@@ -73,3 +73,6 @@ Objeto = são os resultados da classe, fazer instanciação de objetos é fazer 
 
 atributos são as caracteristicas
 
+### Instanciando objetos
+
+Instanciação de objetos é criação de objetos
