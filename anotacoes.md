@@ -37,3 +37,7 @@ souf =  System.out.printf
 fori = cria um laço
 variavel.if = faz um if e coloca váriavel dentro
 variavel.fori = for (int i = 0; i < variavel; i++)
+Ctrl + alt + S = abre as configurações
+Ctrl + F = abre a busca no arquivo
+Ctrl + shift + F = abre busca no projeto
+Ctrl + R = abre a refatoração
