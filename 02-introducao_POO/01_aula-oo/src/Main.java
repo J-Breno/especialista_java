@@ -26,7 +26,7 @@ public class Main {
         seuCarro.proprietario = vc;
         seuCarro.precoCompra = 98000;
 
-        meuCarro.calcularValorRefenda();
+        System.out.println(meuCarro.calcularValorRefenda());
 
         System.out.println();
 
