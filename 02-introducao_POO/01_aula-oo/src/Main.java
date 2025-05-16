@@ -24,6 +24,10 @@ public class Main {
         seuCarro.fabricante = "BMW";
         seuCarro.proprietario = vc;
 
+        meuCarro.calcularValorRefenda();
+
+        System.out.println();
+
         System.out.println("Meu carro");
         System.out.println("-----------------");
         System.out.printf("Modelo: %s\n", meuCarro.modelo);
