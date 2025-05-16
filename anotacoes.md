@@ -29,3 +29,5 @@ Ctrl + alt + L = Formatar o código
 Ctrl + alt + O = Tirar imports não usado
 Ctrl + / = Comentário em linha
 Ctrl + shift + / = Comentário em bloco
+Ctrl + shift + f10 = faz o run
+Ctrl + f9 = faz o Build Project
