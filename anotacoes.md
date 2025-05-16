@@ -31,3 +31,9 @@ Ctrl + / = Comentário em linha
 Ctrl + shift + / = Comentário em bloco
 Ctrl + shift + f10 = faz o run
 Ctrl + f9 = faz o Build Project
+psvm = public static void main(String[] args)
+sout = System.out.println
+souf =  System.out.printf
+fori = cria um laço
+variavel.if = faz um if e coloca váriavel dentro
+variavel.fori = for (int i = 0; i < variavel; i++)
