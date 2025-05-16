@@ -80,3 +80,6 @@ Instanciação de objetos é criação de objetos
 ### Composição de objetos
 
 composição de objetos é um tipo de relacionamento entre classes onde uma classe possui referências a outras classes como parte de sua estrutura, ou seja, Composição é quando um objeto é composto por outros objetos.
+
+Váriáveis são endereço na memória, ou seja, cada objeto tem o seu endereço.
+
