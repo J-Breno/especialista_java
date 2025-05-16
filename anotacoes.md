@@ -68,3 +68,8 @@ Programação declarativa: descreva apenas o resultado desejado sem falar a lóg
 Classe = Descrição de um conjunto de objetos do mesmo **tipo**, ou seja, um **molde**, com as mesma lista de caracteristicas e comportamentos;
 
 Objeto = são os resultados da classe, fazer instanciação de objetos é fazer vários objetos da classe relacionada
+
+### Criando uma classe com atributos
+
+atributos são as caracteristicas
+
