@@ -28,8 +28,8 @@ Java Development Kit (JDK) é kit de desenvolvimento Java, o JDK tem o JRE dentr
 Ctrl + alt + L = Formatar o código
 Ctrl + alt + O = Tirar imports não usado
 Ctrl + / = Comentário em linha
-Ctrl + shift + / = Comentário em bloco
-Ctrl + shift + f10 = faz o run
+Ctrl + Shift + / = Comentário em bloco
+Ctrl + Shift + f10 = faz o run
 Ctrl + f9 = faz o Build Project
 psvm = public static void main(String[] args)
 sout = System.out.println
@@ -39,5 +39,9 @@ variavel.if = faz um if e coloca váriavel dentro
 variavel.fori = for (int i = 0; i < variavel; i++)
 Ctrl + alt + S = abre as configurações
 Ctrl + F = abre a busca no arquivo
-Ctrl + shift + F = abre busca no projeto
+Ctrl + Shift + F = abre busca no projeto
 Ctrl + R = abre a refatoração
+Ctrl + Shift + seta = move a linha para onde voce colocar a seta
+Shift + enter = cria nova linha
+Ctrl + Shift + U = deixa tudo maisculo ou minusculo
+Shift + f6 = renomeia palavra
