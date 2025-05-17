@@ -121,3 +121,6 @@ Embrulha o tipo primitivo dentro dela para vc tratar como um objeto
 Autoboxing o compilador automaticamente converte um tipo primitivo em wrapper
 
 Unboxing é o processo contrário
+
+se valor da váriavel pode ser null alguma vez, utilize o wrapper;
+
