@@ -115,3 +115,9 @@ Tem como voce validar se é null ou não com
 ## Wrapper e Boxing
 
 Embrulha o tipo primitivo dentro dela para vc tratar como um objeto
+
+### Autoboxing e Unboxing
+
+Autoboxing o compilador automaticamente converte um tipo primitivo em wrapper
+
+Unboxing é o processo contrário
