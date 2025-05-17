@@ -16,5 +16,13 @@ public class Main {
 
         System.out.println(Calculadora.calcularMedia(notas2));
         System.out.println(Arrays.toString(notas1));
+
+        Turma turma = new Turma();
+        turma.identificacao = "Maternal";
+        turma.alunos = new Aluno[3];
+
+        turma.alunos[0] = new Aluno();
+        turma.alunos[0].nome = "Joçao";
+        turma.alunos[0].idade = 2004;
     }
 }
