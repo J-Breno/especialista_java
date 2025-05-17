@@ -89,3 +89,16 @@ this é o próprio objeto
 
 Sobrecarga de método é voce ter o método com o mesmo nome, porém com parametros diferentes
 
+## Efective Java e Clean code
+
+### BCódigo Limpo: escolha bons nomes
+Programas são feitos para serem lidos por humanos e apenas incidentalmente para serem executados por computadores.
+
+Se algo precisa de comentário para explicar coisas, então é porque não está boa;
+
+Melhor código grande e compreensivel do que um pequeno e que voce não consegue entender.
+
+Nome de classe não deve ser verbo e sim substantivo
+
+Use nomes descritivos
+
