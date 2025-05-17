@@ -3,6 +3,10 @@ public class Produto {
     double precoCusto;
     double precoVenda;
 
+    void alterarCustoEmbalagem(double custoEmbalagem) {
+        Produto.custoEmbalagem = custoEmbalagem;
+    }
+
     void alterarPrecoCusto(double precoCusto) {
         this.precoCusto = precoCusto;
     }
