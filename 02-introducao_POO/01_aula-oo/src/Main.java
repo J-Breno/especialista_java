@@ -28,6 +28,9 @@ public class Main {
 
         System.out.println(meuCarro.calcularValorRefenda());
 
+        meuCarro.imprimirResumoDepriacao();
+        seuCarro.imprimirResumoDepriacao();
+
         System.out.println();
 
         System.out.println("Meu carro");
