@@ -87,3 +87,5 @@ A variável não armazena/é o objeto, mas ela faz referencia ao objeto
 
 this é o próprio objeto
 
+Sobrecarga de método é voce ter o método com o mesmo nome, porém com parametros diferentes
+
