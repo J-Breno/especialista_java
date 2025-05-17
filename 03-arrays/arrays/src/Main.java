@@ -5,5 +5,7 @@ public class Main {
         int[] notas2 = {8, 3, 9, 1, 7};
 
         System.out.println(notas1[2]);
+
+        Calculadora.calcularMedia(notas2);
     }
 }
