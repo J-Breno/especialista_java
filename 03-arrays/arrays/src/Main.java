@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         int[] notas  = new int[5];
@@ -6,6 +8,8 @@ public class Main {
 
         System.out.println(notas1[2]);
 
-        Calculadora.calcularMedia(notas2);
+        String notasEmString = Arrays.toString(notas2);
+
+        System.out.println(Calculadora.calcularMedia(notas2));
     }
 }
