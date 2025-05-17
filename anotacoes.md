@@ -84,3 +84,6 @@ composição de objetos é um tipo de relacionamento entre classes onde uma clas
 Váriáveis são endereço na memória, ou seja, cada objeto tem o seu endereço.
 
 A variável não armazena/é o objeto, mas ela faz referencia ao objeto
+
+this é o próprio objeto
+
