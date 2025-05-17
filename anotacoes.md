@@ -124,3 +124,5 @@ Unboxing é o processo contrário
 
 se valor da váriavel pode ser null alguma vez, utilize o wrapper;
 
+## Arrays
+
