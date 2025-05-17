@@ -102,3 +102,13 @@ Nome de classe não deve ser verbo e sim substantivo
 
 Use nomes descritivos
 
+não deixe número soltos, coloque em constantes ou variáveis.
+
+Faça métodos pequenos que faça apenas uma coisa. E refatore ele em mais métodos para ficar cada vez mais legivel
+
+Nunca passe null nos argumentos do método
+Tem como voce validar se é null ou não com 
+```Java
+    Objects.requireNonNull(entity,"Message");
+```
+
