@@ -4,10 +4,7 @@ public class PricipalVisitante {
         visitante.nome = "João";
         visitante.idade = 20;
 
-        if(visitante.possuiAcessoRestritoPorIdade()) {
-            System.out.printf("Acesso não permitido para menores de %d anos", Visitante.IDADE_MINIMA_ACESSO_IRRESTRITO);
-        } else {
-            System.out.println("Acesso liberado");
-        }
+        CadastroPortaria cadastroPortaria = new CadastroPortaria();
+        cadastroPortaria.cadastrar(visitante, 10);
     }
 }
