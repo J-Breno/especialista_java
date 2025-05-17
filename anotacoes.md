@@ -112,3 +112,6 @@ Tem como voce validar se é null ou não com
     Objects.requireNonNull(entity,"Message");
 ```
 
+## Wrapper e Boxing
+
+Embrulha o tipo primitivo dentro dela para vc tratar como um objeto
