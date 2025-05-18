@@ -31,5 +31,16 @@ public class Main {
         turma.alunos[1] = aluno1;
 
         turma.imprimirListaDeAlunos();
+
+        Turma turma2 = new Turma();
+
+        int[] numerosJogos1 = {25, 11, 8, 46, 37, 14};
+        int[] numerosJogos2 = Arrays.copyOf(numerosJogos1,3 + 1);
+
+        System.out.println(Arrays.toString(numerosJogos1));
+        System.out.println(Arrays.toString(numerosJogos2));
+
+        turma2.adicionarAluno(aluno1);
+        turma2.imprimirListaDeAlunos();
     }
 }
