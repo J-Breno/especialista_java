@@ -24,5 +24,12 @@ public class Main {
         turma.alunos[0] = new Aluno();
         turma.alunos[0].nome = "João";
         turma.alunos[0].idade = 2004;
+
+        Aluno aluno1 = new Aluno();
+        aluno1.nome = "Maria";
+        aluno1.idade = 21;
+        turma.alunos[1] = aluno1;
+
+        turma.imprimirListaDeAlunos();
     }
 }
