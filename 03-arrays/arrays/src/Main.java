@@ -22,7 +22,7 @@ public class Main {
         turma.alunos = new Aluno[3];
 
         turma.alunos[0] = new Aluno();
-        turma.alunos[0].nome = "Joçao";
+        turma.alunos[0].nome = "João";
         turma.alunos[0].idade = 2004;
     }
 }
