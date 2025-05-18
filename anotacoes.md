@@ -33,7 +33,7 @@ Ctrl + Shift + f10 = faz o run
 Ctrl + f9 = faz o Build Project
 psvm = public static void main(String[] args)
 sout = System.out.println
-souf =  System.out.printf
+souf = System.out.printf
 fori = cria um laço
 variavel.if = faz um if e coloca váriavel dentro
 variavel.fori = for (int i = 0; i < variavel; i++)
@@ -92,6 +92,7 @@ Sobrecarga de método é voce ter o método com o mesmo nome, porém com paramet
 ## Efective Java e Clean code
 
 ### BCódigo Limpo: escolha bons nomes
+
 Programas são feitos para serem lidos por humanos e apenas incidentalmente para serem executados por computadores.
 
 Se algo precisa de comentário para explicar coisas, então é porque não está boa;
@@ -107,7 +108,8 @@ não deixe número soltos, coloque em constantes ou variáveis.
 Faça métodos pequenos que faça apenas uma coisa. E refatore ele em mais métodos para ficar cada vez mais legivel
 
 Nunca passe null nos argumentos do método
-Tem como voce validar se é null ou não com 
+Tem como voce validar se é null ou não com
+
 ```Java
     Objects.requireNonNull(entity,"Message");
 ```
@@ -124,5 +126,10 @@ Unboxing é o processo contrário
 
 se valor da váriavel pode ser null alguma vez, utilize o wrapper;
 
-## Arrays
+## Gerenciamento de memória do java
 
+### Estrutura da memória da JVM
+
+Na memória heap que fica os objetos que nós instanciamos
+
+memória não heap fica as váriaveis, chamado de metodos,tipos primitivos etc;
