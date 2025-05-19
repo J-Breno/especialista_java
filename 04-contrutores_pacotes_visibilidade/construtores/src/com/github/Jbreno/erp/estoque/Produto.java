@@ -1,3 +1,5 @@
+package com.github.Jbreno.erp.estoque;
+
 import java.util.Objects;
 import java.util.UUID;
 

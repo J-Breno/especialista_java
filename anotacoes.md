@@ -148,3 +148,6 @@ Uma boa prática é remover as referencias de objetos não usados.
 
 ## Construtores, pacotes e visibilidade
 
+um construtor é um método especial usado para criar e inicializar objetos de uma classe. Ele tem o mesmo nome da classe e não tem tipo de retorno (nem mesmo void).
+
+Se você definir qualquer construtor manualmente, o Java não cria mais o construtor padrão automaticamente. Então, se precisar dos dois (com e sem parâmetros), você deve declarar os dois.
