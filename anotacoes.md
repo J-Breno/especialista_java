@@ -208,3 +208,8 @@ Para se aprofundar, estudo pela documentação oficial do Java:
 🔗 [Documentação Java SE](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html)
 
 ---
+
+## Encapsulamento, Javabens e records
+
+---
+
