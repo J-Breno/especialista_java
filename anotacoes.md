@@ -151,3 +151,9 @@ Uma boa prática é remover as referencias de objetos não usados.
 um construtor é um método especial usado para criar e inicializar objetos de uma classe. Ele tem o mesmo nome da classe e não tem tipo de retorno (nem mesmo void).
 
 Se você definir qualquer construtor manualmente, o Java não cria mais o construtor padrão automaticamente. Então, se precisar dos dois (com e sem parâmetros), você deve declarar os dois.
+
+**Leia a documentação do java:**
+
+[Documentação Java](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html)
+
+Quando algo estiver depreciado é porque ele ainda existe, porém qualquer hora pode sair.
