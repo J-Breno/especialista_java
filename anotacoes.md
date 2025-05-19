@@ -1,159 +1,210 @@
-# Java
+# 📘 Introdução ao Java
 
-## Introdução ao Java
+Este repositório contém anotações, exemplos e dicas práticas sobre a linguagem de programação **Java**, organizados para facilitar o aprendizado e revisão de conceitos essenciais — desde a plataforma Java até orientação a objetos, boas práticas de código e gerenciamento de memória.
 
-### Conhecendo plataformas Java
+---
 
-- Java SE
-- JAkarta EE (Antigo Java EE)
-- Java ME
-- Java Card
+## ✨ Sumário
 
-Java SE (Standard Edition) tem Jakarta Servelet, Jakarta Persistence (JPA), Jakarta Bean Validation, etc...
+- [Plataformas Java](#plataformas-java)
+- [JVM, JRE e JDK](#jvm-jre-e-jdk)
+- [Produtividade com IDE](#produtividade-com-ide)
+- [Paradigmas de Programação](#paradigmas-de-programação)
+- [Orientação a Objetos](#orientação-a-objetos)
+- [Boas Práticas de Código](#boas-práticas-de-código)
+- [Tipos Primitivos e Wrappers](#tipos-primitivos-e-wrappers)
+- [Gerenciamento de Memória](#gerenciamento-de-memória)
+- [Construtores, Pacotes e Visibilidade](#construtores-pacotes-e-visibilidade)
+- [📚 Documentação Oficial](#-documentação-oficial)
 
-### Conhecendo a Máquina Virtual Java (JVM)
+---
 
-Java é uma linguagem pré compilada, isso significa que para executar uma aplicação java em um computador, precisamos de um software para intermediar e traduzir o código pre compilado para a linguagem nativa da maquina, esse software seria JVM(Java Virtual Machina).
+## 🖥️ Plataformas Java
 
-O código java é compilado para bytecode e esse bytecode é interpretado pela JVM e ela traduz em operações nativas para o SO.
+A plataforma Java possui diferentes edições que atendem a diversas necessidades:
 
-### JRE e JDK: qual é a diferença?
+- **Java SE (Standard Edition)**: Base da linguagem Java.
+  - Inclui: Jakarta Servlet, Jakarta Persistence (JPA), Jakarta Bean Validation, etc.
+- **Jakarta EE** (antiga Java EE): Voltada para aplicações corporativas.
+- **Java ME**: Para dispositivos móveis e embarcados.
+- **Java Card**: Para cartões inteligentes (smart cards).
 
-Java Runtime Environment (JRE) é um ambiente de Execução Java,a JVM é apenas um componente dentro desse ambiente de execução. Também tem bibliotecas padrão dentro dela, Class Loader;
+---
 
-Java Development Kit (JDK) é kit de desenvolvimento Java, o JDK tem o JRE dentro dele e também tem o compilador e outras ferramentas e utilitários.
+## 🔥 JVM, JRE e JDK
 
-## Produtividade com IDE
+### ☕ Java Virtual Machine (JVM)
+Java é uma linguagem **pré-compilada**. O código é transformado em **bytecode**, que é interpretado pela **JVM** (Java Virtual Machine). A JVM traduz o bytecode em instruções nativas para o sistema operacional.
 
-Ctrl + alt + L = Formatar o código
-Ctrl + alt + O = Tirar imports não usado
-Ctrl + / = Comentário em linha
-Ctrl + Shift + / = Comentário em bloco
-Ctrl + Shift + f10 = faz o run
-Ctrl + f9 = faz o Build Project
-psvm = public static void main(String[] args)
-sout = System.out.println
-souf = System.out.printf
-fori = cria um laço
-variavel.if = faz um if e coloca váriavel dentro
-variavel.fori = for (int i = 0; i < variavel; i++)
-Ctrl + alt + S = abre as configurações
-Ctrl + F = abre a busca no arquivo
-Ctrl + Shift + F = abre busca no projeto
-Ctrl + R = abre a refatoração
-Ctrl + Shift + seta = move a linha para onde voce colocar a seta
-Shift + enter = cria nova linha
-Ctrl + Shift + U = deixa tudo maisculo ou minusculo
-Shift + f6 = renomeia palavra
-stratches = serve para fazer anotações e testar códigos no projeto e eles não estão presos ao projeto, se voce abrir outro projeto eles vão está lá
+### ⚙️ JRE vs JDK
 
-## Mergulhando em Orientação a objeto
+| Componente | Descrição |
+|-----------|-----------|
+| **JRE** (Java Runtime Environment) | Ambiente de execução Java. Inclui a JVM e bibliotecas padrões. |
+| **JDK** (Java Development Kit) | Kit de desenvolvimento Java. Inclui o JRE, compilador (`javac`) e ferramentas de desenvolvimento. |
 
-### Rascunhando e testando código com Scratch Files
+---
 
-É a forma que classificamos a linguagem de programação pela sua forma de funcionar
+## 🚀 Produtividade com IDE (Atalhos úteis)
 
-Programação imperativa = O programador instrui a máquina de como fazer as coisas
+> Principais atalhos para aumentar a produtividade ao programar com IntelliJ IDEA:
 
-- Programação procedural = programa passo a passo, por uma ordem.
-- Programação orientada a objetos = Simular as coisas no mundo real/abstrato no código, tudo seria um objeto, possui uma identidade;
+| Ação | Atalho |
+|------|--------|
+| Formatar código | `Ctrl + Alt + L` |
+| Remover imports não usados | `Ctrl + Alt + O` |
+| Comentar linha | `Ctrl + /` |
+| Comentar bloco | `Ctrl + Shift + /` |
+| Rodar projeto | `Ctrl + Shift + F10` |
+| Build do projeto | `Ctrl + F9` |
+| Buscar no arquivo | `Ctrl + F` |
+| Buscar no projeto | `Ctrl + Shift + F` |
+| Refatorar | `Ctrl + R` |
+| Abrir configurações | `Ctrl + Alt + S` |
+| Nova linha abaixo | `Shift + Enter` |
+| Renomear símbolo | `Shift + F6` |
+| Alternar maiúsculo/minúsculo | `Ctrl + Shift + U` |
 
-Programação declarativa: descreva apenas o resultado desejado sem falar a lógica
+> Dicas:
+> - `psvm`: Gera o método `public static void main(String[] args)`
+> - `sout`, `souf`: Gera `System.out.println` ou `System.out.printf`
+> - `fori`, `variavel.if`, `variavel.fori`: Gera estruturas de controle rapidamente
+> - **Scratch Files**: Arquivos temporários para testes de código
 
-- Programação funcional
-- Programação reativa
+---
 
-### Entendendo o conceito de classes e objetos
+## 🧠 Paradigmas de Programação
 
-Classe = Descrição de um conjunto de objetos do mesmo **tipo**, ou seja, um **molde**, com as mesma lista de caracteristicas e comportamentos;
+- **Programação Imperativa**: O programador descreve *como* fazer.
+  - Procedural
+  - Orientada a Objetos
+- **Programação Declarativa**: O programador descreve *o que* deseja.
+  - Funcional
+  - Reativa
 
-Objeto = são os resultados da classe, fazer instanciação de objetos é fazer vários objetos da classe relacionada
+---
 
-### Criando uma classe com atributos
+## 🎯 Orientação a Objetos
 
-atributos são as caracteristicas
+### 🧱 Classes e Objetos
 
-### Instanciando objetos
+- **Classe**: É um molde que define características (atributos) e comportamentos (métodos).
+- **Objeto**: É uma instância de uma classe.
 
-Instanciação de objetos é criação de objetos
+### 🏗️ Atributos e Instanciação
 
-### Composição de objetos
+- **Atributos**: São as características da classe.
+- Para criar um objeto:  
+  ```java
+  Pessoa p = new Pessoa();
+  ```
 
-composição de objetos é um tipo de relacionamento entre classes onde uma classe possui referências a outras classes como parte de sua estrutura, ou seja, Composição é quando um objeto é composto por outros objetos.
+### ⚙️ Composição de Objetos
 
-Váriáveis são endereço na memória, ou seja, cada objeto tem o seu endereço.
+- Uma classe pode conter referências a outras classes:
+  ```java
+  class Carro {
+      Motor motor; // Composição
+  }
+  ```
+- Cada variável armazena uma **referência** (endereço de memória) para o objeto, não o objeto em si.
+- `this`: Referência ao próprio objeto.
 
-A variável não armazena/é o objeto, mas ela faz referencia ao objeto
+### ➕ Sobrecarga de Métodos
 
-this é o próprio objeto
+- É possível ter métodos com o **mesmo nome**, mas **diferentes parâmetros**.
 
-Sobrecarga de método é voce ter o método com o mesmo nome, porém com parametros diferentes
+---
 
-## Efective Java e Clean code
+## 🧼 Boas Práticas de Código
 
-### BCódigo Limpo: escolha bons nomes
+> Baseado nos princípios do *Effective Java* e *Clean Code*.
 
-Programas são feitos para serem lidos por humanos e apenas incidentalmente para serem executados por computadores.
+- Use **nomes descritivos** para variáveis, métodos e classes.
+- **Evite comentários desnecessários**: O código deve se explicar sozinho.
+- **Prefira legibilidade à concisão**.
+- **Classes** devem ser substantivos. **Métodos**, verbos.
+- **Evite números mágicos**: Use constantes nomeadas.
+- Faça **métodos pequenos**, que façam uma única coisa.
+- Evite passar `null` como argumento. Use:
+  ```java
+  Objects.requireNonNull(obj, "Mensagem");
+  ```
 
-Se algo precisa de comentário para explicar coisas, então é porque não está boa;
+---
 
-Melhor código grande e compreensivel do que um pequeno e que voce não consegue entender.
+## 🔢 Tipos Primitivos e Wrappers
 
-Nome de classe não deve ser verbo e sim substantivo
+Java possui tipos primitivos como `int`, `double`, `boolean`, `char`, etc. Para tratá-los como objetos, usamos as classes **Wrapper**:
 
-Use nomes descritivos
+| Tipo Primitivo | Wrapper |
+|----------------|---------|
+| `int` | `Integer` |
+| `double` | `Double` |
+| `boolean` | `Boolean` |
+| `char` | `Character` |
 
-não deixe número soltos, coloque em constantes ou variáveis.
+### 🎁 Autoboxing e Unboxing
 
-Faça métodos pequenos que faça apenas uma coisa. E refatore ele em mais métodos para ficar cada vez mais legivel
+- **Autoboxing**: Converte automaticamente de primitivo para Wrapper.
+  ```java
+  Integer num = 10; // int -> Integer
+  ```
+- **Unboxing**: O processo inverso.
 
-Nunca passe null nos argumentos do método
-Tem como voce validar se é null ou não com
+> Use **Wrapper** se a variável pode ser `null`.
 
-```Java
-    Objects.requireNonNull(entity,"Message");
+---
+
+## 💾 Gerenciamento de Memória
+
+### 🧠 Estrutura da Memória da JVM
+
+- **Heap**: Onde os objetos instanciados são armazenados.
+- **Stack (Call Stack)**: Armazena variáveis locais e chamadas de método.
+- **Metaspace** (antiga PermGen): Armazena metadados da aplicação (classes, métodos).
+
+### ♻️ Garbage Collector
+
+- Quando um objeto deixa de ter referências, ele é elegível para coleta de lixo.
+- Boa prática: anule referências quando não precisar mais do objeto.
+
+---
+
+## 🏗️ Construtores, Pacotes e Visibilidade
+
+### 🔨 Construtores
+
+- Método especial usado para instanciar e inicializar objetos.
+- Tem o mesmo nome da classe e **não possui tipo de retorno** (nem `void`).
+- Se você criar um construtor com parâmetros, o **construtor padrão** deixa de ser gerado automaticamente. Declare os dois, se precisar.
+
+```java
+public class Pessoa {
+    public Pessoa() {} // Construtor padrão
+    public Pessoa(String nome) {} // Sobrecarga
+}
 ```
 
-## Wrapper e Boxing
+### 📦 Pacotes
 
-Embrulha o tipo primitivo dentro dela para vc tratar como um objeto
+- Organizam o código em grupos lógicos de classes.
 
-### Autoboxing e Unboxing
+### 🔐 Modificadores de Acesso
 
-Autoboxing o compilador automaticamente converte um tipo primitivo em wrapper
+| Modificador | Visível em... |
+|-------------|----------------|
+| `public` | Todas as classes |
+| `protected` | Mesmo pacote e subclasses |
+| `default` (sem modificador) | Somente no mesmo pacote |
+| `private` | Somente na própria classe |
 
-Unboxing é o processo contrário
+---
 
-se valor da váriavel pode ser null alguma vez, utilize o wrapper;
+## 📚 Documentação Oficial
 
-## Gerenciamento de memória do java
+Para se aprofundar, estudo pela documentação oficial do Java:
 
-### Estrutura da memória da JVM
+🔗 [Documentação Java SE](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html)
 
-Na memória heap que fica os objetos que nós instanciamos
-
-memória não heap fica as váriaveis, chamado de metodos,tipos primitivos etc;
-
-### Call Stack, Stack memory e heap memory
-
-váriaveis de tipo primitivos ficam na stack memory
-
-O objeto fica na heap momory, porém o endereço fica na stack memory
-
-call stack seria um pilha da memoria heap
-
-quando voce para de usar o objeto, fica sem referencia para o objeto, ninguem está usando ele, o garbage collector limpa/apaga esse objeto da heap memory
-
-Uma boa prática é remover as referencias de objetos não usados.
-
-## Construtores, pacotes e visibilidade
-
-um construtor é um método especial usado para criar e inicializar objetos de uma classe. Ele tem o mesmo nome da classe e não tem tipo de retorno (nem mesmo void).
-
-Se você definir qualquer construtor manualmente, o Java não cria mais o construtor padrão automaticamente. Então, se precisar dos dois (com e sem parâmetros), você deve declarar os dois.
-
-**Leia a documentação do java:**
-
-[Documentação Java](https://docs.oracle.com/en/java/javase/24/docs/api/java.base/module-summary.html)
-
-Quando algo estiver depreciado é porque ele ainda existe, porém qualquer hora pode sair.
+---
