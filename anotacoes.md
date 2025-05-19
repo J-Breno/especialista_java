@@ -133,3 +133,13 @@ se valor da váriavel pode ser null alguma vez, utilize o wrapper;
 Na memória heap que fica os objetos que nós instanciamos
 
 memória não heap fica as váriaveis, chamado de metodos,tipos primitivos etc;
+
+### Call Stack, Stack memory e heap memory
+
+váriaveis de tipo primitivos ficam na stack memory
+
+O objeto fica na heap momory, porém o endereço fica na stack memory
+
+call stack seria um pilha da memoria heap
+
+quando voce para de usar o objeto, fica sem referencia para o objeto, ninguem está usando ele, o garbage collector limpa/apaga esse objeto da heap memory
