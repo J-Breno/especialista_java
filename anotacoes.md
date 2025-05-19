@@ -213,3 +213,9 @@ Para se aprofundar, estudo pela documentação oficial do Java:
 
 ---
 
+Encapsulamento é o princípio de esconder os detalhes internos de uma classe e expor apenas o que é necessário, normalmente por meio de métodos públicos de acesso (getters e setters).
+
+JavaBean é uma convenção (um padrão) para criar classes em Java que seguem algumas regras específicas. Muito usado para representar objetos de dados (como DTOs ou formulários).
+
+ O record é uma forma moderna de declarar classes imutáveis em Java, usada principalmente para transportar dados (Data Transfer Objects – DTOs) com muito menos código. Bom para armazenar dados
+
