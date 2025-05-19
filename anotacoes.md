@@ -145,3 +145,6 @@ call stack seria um pilha da memoria heap
 quando voce para de usar o objeto, fica sem referencia para o objeto, ninguem está usando ele, o garbage collector limpa/apaga esse objeto da heap memory
 
 Uma boa prática é remover as referencias de objetos não usados.
+
+## Construtores, pacotes e visibilidade
+
