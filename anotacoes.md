@@ -219,8 +219,27 @@ JavaBean é uma convenção (um padrão) para criar classes em Java que seguem a
 
  O record é uma forma moderna de declarar classes imutáveis em Java, usada principalmente para transportar dados (Data Transfer Objects – DTOs) com muito menos código. Bom para armazenar dados
 
+ ## Herança
+
+ Herança em Java é um dos principais pilares da Programação Orientada a Objetos (POO) e permite que uma classe herde atributos e métodos de outra classe.
+
+A ideia é reutilizar código e evitar repetição. Com herança, você pode criar uma nova classe (subclasse) com base em uma classe existente (superclasse), aproveitando seus comportamentos e podendo também adicionar ou sobrescrever funcionalidades.
+
 ## Polimorfismo
+ 
+ O polimorfismo permite que um mesmo método ou comportamento possa agir de maneiras diferentes dependendo do objeto que o invoca.
 
 ### Upcasting
 
  o upcasting é o processo de converter uma instância de uma classe derivada (subclasse) para uma referência da sua superclasse.
+
+ ### Downcasting
+
+ Downcasting é o processo de converter uma referência de uma classe pai (superclasse) para uma referência de uma classe filha (subclasse). Isso é feito quando você tem um objeto que, apesar de estar referenciado por uma variável do tipo da superclasse, na verdade é uma instância de uma subclasse, e você quer acessar comportamentos específicos dessa subclasse.
+
+ A anotação @Override em Java serve para informar ao compilador que você está sobrescrevendo um método da superclasse ou de uma interface.
+
+ ### Instanceof
+
+Instanceof serve para saber se uma classe é uma outra classe. Por exemplo: Um conta investimento é uma conta?
+OBS: não fique usando direto o instanceof
