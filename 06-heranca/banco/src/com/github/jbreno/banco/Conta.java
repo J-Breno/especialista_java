@@ -7,6 +7,13 @@ public class Conta {
     private int numero;
     protected double saldo;
 
+    public Conta(Titular titular, int agencia, int numero, double saldo) {
+        this.titular = titular;
+        this.agencia = agencia;
+        this.numero = numero;
+        this.saldo = saldo;
+    }
+
     public Titular getTitular() {
         return titular;
     }
@@ -61,5 +68,17 @@ public class Conta {
         System.out.printf("Conta: %d\n", getNumero());
         System.out.printf("Titular: %s\n", getTitular().getNome());
         System.out.printf("Saldo: %.2f\n", getSaldo());
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Conta{\n");
+        builder.append("Titular: ").append(getTitular()).append("\n");
+        builder.append("Agencia: ").append(getAgencia()).append("\n");
+        builder.append("Numero: ").append(getNumero()).append("\n");
+        builder.append("Saldo: ").append(getSaldo()).append("\n");
+        builder.append("}");
+        return builder.toString();
     }
 }

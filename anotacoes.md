@@ -219,3 +219,8 @@ JavaBean é uma convenção (um padrão) para criar classes em Java que seguem a
 
  O record é uma forma moderna de declarar classes imutáveis em Java, usada principalmente para transportar dados (Data Transfer Objects – DTOs) com muito menos código. Bom para armazenar dados
 
+## Polimorfismo
+
+### Upcasting
+
+ o upcasting é o processo de converter uma instância de uma classe derivada (subclasse) para uma referência da sua superclasse.

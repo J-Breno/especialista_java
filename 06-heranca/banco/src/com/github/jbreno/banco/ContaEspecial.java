@@ -5,20 +5,18 @@ public class ContaEspecial extends ContaInvestimento {
     private double tarifaMensal;
     private double limiteChequeEspecial;
 
+    public ContaEspecial(Titular titular, int agencia, int numero, double saldo, double valorTotalRendimentos, double tarifaMensal, double limiteChequeEspecial) {
+        super(titular, agencia, numero, saldo, valorTotalRendimentos);
+        this.tarifaMensal = tarifaMensal;
+        this.limiteChequeEspecial = limiteChequeEspecial;
+    }
+
     public double getTarifaMensal() {
         return tarifaMensal;
     }
 
-    public void setTarifaMensal(double tarifaMensal) {
-        this.tarifaMensal = tarifaMensal;
-    }
-
     public double getLimiteChequeEspecial() {
         return limiteChequeEspecial;
-    }
-
-    public void setLimiteChequeEspecial(double limiteChequeEspecial) {
-        this.limiteChequeEspecial = limiteChequeEspecial;
     }
 
     public double getSaldoDisponivel() {
