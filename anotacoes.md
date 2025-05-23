@@ -224,10 +224,12 @@ JavaBean é uma convenção (um padrão) para criar classes em Java que seguem a
  Herança em Java é um dos principais pilares da Programação Orientada a Objetos (POO) e permite que uma classe herde atributos e métodos de outra classe.
 
 A ideia é reutilizar código e evitar repetição. Com herança, você pode criar uma nova classe (subclasse) com base em uma classe existente (superclasse), aproveitando seus comportamentos e podendo também adicionar ou sobrescrever funcionalidades.
+É um tipo de associação que permite que uma classe herde todos dados e comportamentos de outra.
 
 ## Polimorfismo
  
  O polimorfismo permite que um mesmo método ou comportamento possa agir de maneiras diferentes dependendo do objeto que o invoca.
+ Polimorfismo é recurso que permite variáveis de um mesmo tipo mais genérico possam apontar para objetos de tipos específicos diferentes, tendo assim comportamentos diferentes conforme cada tipo específico.
 
 ### Upcasting
 
@@ -242,4 +244,24 @@ A ideia é reutilizar código e evitar repetição. Com herança, você pode cri
  ### Instanceof
 
 Instanceof serve para saber se uma classe é uma outra classe. Por exemplo: Um conta investimento é uma conta?
-OBS: não fique usando direto o instanceof
+OBS: não fique usando direto o instanceof, evite
+
+Classes abstratas são classes que nã podem ser instanciadas
+
+## Interface
+
+interface é um contrato
+
+## Exceptions
+
+Exceções (do inglês exceptions) são eventos indesejados que ocorrem durante a execução do programa, como erro de divisão por zero, tentativa de acesso a um índice inválido, falha de conexão com banco de dados, etc.
+
+Java trata essas situações com um sistema robusto de tratamento de exceções, permitindo que o programa não quebre abruptamente e que você lide com erros de forma controlada.
+
+## Generics
+
+Generics são uma forma de escrever código genérico, reutilizável e com segurança de tipo.
+
+Eles permitem parametrizar tipos, ou seja, dizer que uma classe ou método trabalha com um tipo que será informado na hora do uso.
+
+T extends NomeClasse - diz que esse T pode ser apenas de algo que esteja relacionado com o NomeClasse
